@@ -35,7 +35,12 @@ def parse_log(file_path, output_file=None):
         r'LogAction',
         r'CrowdStrike',
         r'ds_agent',
-        r'Timed Out after'
+        r'Timed Out after',
+		r'lack of quorum',
+		r'is unclean',
+		r'node is pending',
+        r'nfs.* not responding',
+		
     ]
 
     # If the user just pressed enter without providing a file name, return early
